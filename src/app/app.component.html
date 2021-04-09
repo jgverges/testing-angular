@@ -1,2 +1,14 @@
 <h2>test</h2>
-<h2>{{add(2,4)}}</h2>
+
+<p>
+  Num1<input #num1 id="num1" type="number">
+</p>
+
+<p>
+  Num2 <input #num2 id="num2" type="number">
+</p>
+
+
+<button #calc id="calc" (click)="printAdd(num1.value,num2.value)">add</button>
+
+<input #result id="result" type="text">

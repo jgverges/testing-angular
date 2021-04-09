@@ -1,14 +1,28 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+/* new test */
+describe('AppComponent', async () => {
 
-describe('AppComponent', () => {
-  let app : AppComponent;
+  beforeEach(async () => {
+    TestBed.configureTestingModule({
+      declarations:[
+        AppComponent
+      ],
+      providers :[]
+    }).compileComponents();
 
-  beforeEach(async ()=>{
-    app = new AppComponent();
+    TestBed.configureTestingModule({
+      declarations : [AppComponent]
+    })
+    .createComponent(AppComponent);
+  });
+
+  it('suma debe dar 4', async () => {
+    (<HTMLInputElement>document.getElementById('num1')).value='2';
+    (<HTMLInputElement>document.getElementById('num2')).value='2';
+    document.getElementById('calc').click();
+    console.log('***',(<HTMLInputElement>document.getElementById('result')).value);
+    expect((<HTMLInputElement>document.getElementById('result')).value).toBe('4');
+
   })
-
-  it('debe dar 2', async () => {
-    expect (app.add(2,2)).toEqual(4);
-  })
-});
+})

@@ -23,9 +23,13 @@ export class AppComponent {
   printAdd(num1:number, num2:number):void {
     this.result.nativeElement.value = this.add(num1,num2);
   }
+
   localStorageTest(){
     this.ls.setItem('greeting', 'Hello World');
     console.log(this.ls.getItem('greeting'));
+
+    this.ls.setJson('json', {name:'Jordi', city:'bcn', numbers :[1,2,3]});
+    console.log(this.ls.getJson('json'));
   }
 
 }

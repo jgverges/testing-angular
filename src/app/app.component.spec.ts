@@ -48,7 +48,7 @@ describe('AppComponent', async () => {
   })
 
   it('title contain Jasmine', async () => {
-    expect(document.getElementById('title').innerText).toContain('Jasmin');
+    expect(document.getElementById('title').innerText).toContain('Jasmine');
   })
 
   it('cerca de 10', async () => {

@@ -10,7 +10,10 @@ describe('LocalStorageService', () => {
     service = TestBed.inject(LocalStorageService);
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
+  it('should retun value', () =>{
+    service.setItem('item','myValue');
+    expect(service.getItem('item')).toEqual('myValue');
+    expect(service.getItem('item2')).toEqual(null);
+  })
+
 });

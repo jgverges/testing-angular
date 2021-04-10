@@ -1,11 +1,12 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { LocalStorageService } from './services/local-storage.service';
+import { LocalStorageService } from './tested-Components/services/local-storage.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.sass']
 })
+
 export class AppComponent {
   @ViewChild('result',{static: true}) result: ElementRef;
   title = 'my-app';

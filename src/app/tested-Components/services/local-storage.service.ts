@@ -20,7 +20,7 @@ export class LocalStorageService {
       localStorage.setItem(key, JSON.stringify(data))
     }
     catch (e){
-      console.log(e)
+      console.log(e);
     }
   }
 
@@ -29,7 +29,7 @@ export class LocalStorageService {
       return localStorage.getItem(key)
     }
     catch (e){
-      console.log('Error getItem',e)
+      console.log('Error getItem',e);
     }
   }
 

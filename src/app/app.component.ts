@@ -9,7 +9,7 @@ import { LocalStorageService } from './tested-Components/services/local-storage.
 
 export class AppComponent {
   @ViewChild('result',{static: true}) result: ElementRef;
-  title = 'my-app';
+  title = 'testing-angular';
 
   constructor(
     private ls:LocalStorageService

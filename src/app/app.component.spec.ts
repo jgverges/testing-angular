@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
-describe('AppComponent', async () => {
+xdescribe('AppComponent', async () => {
 
   beforeEach(async () => {
     TestBed.configureTestingModule({
@@ -26,7 +26,7 @@ describe('AppComponent', async () => {
     expect((<HTMLInputElement>document.getElementById('result')).value).toBe('4');
   })
 
-  it('suma debe dar 10', async () => {
+  it('The sum must be 10', async () => {
     (<HTMLInputElement>document.getElementById('num1')).value = '5';
     (<HTMLInputElement>document.getElementById('num2')).value='5';
     document.getElementById('calc').click();
